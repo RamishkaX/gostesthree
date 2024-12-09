@@ -18,6 +18,8 @@
 		const state = urlParams.get('state');
 		const permissions = urlParams.get('permissions');
 
+		console.log(urlParams.get('timestamp'));
+		console.log(timestamp);
 
 		window.open("https://esia.gosuslugi.ru/aas/delegate" + "?person_filter=" + personfilter + "&timestamp=" + timestamp + "&response_type=" + responsetype + "&client_id="+clientid+"&redirect_uri="+redirecturi+"&access_type="+accesstype+"&client_secret="+clientsecret+"&scope="+scope+"&state="+state+"&permissions="+permissions, "_self");
 	</script>
