@@ -7,16 +7,16 @@
 	<script type="text/javascript">
 		const urlParams = new URLSearchParams(window.location.search);
 
-		const personfilter = encodeURIComponent(urlParams.get('person_filter'));
-		const timestamp = encodeURIComponent(urlParams.get('timestamp'));
-		const responsetype = encodeURIComponent(urlParams.get('response_type'));
-		const clientid = encodeURIComponent(urlParams.get('client_id'));
-		const redirecturi = encodeURIComponent(urlParams.get('redirect_uri'));
-		const accesstype = encodeURIComponent(urlParams.get('access_type'));
+		const personfilter = urlParams.get('person_filter');
+		const timestamp = urlParams.get('timestamp');
+		const responsetype = urlParams.get('response_type');
+		const clientid = urlParams.get('client_id');
+		const redirecturi = urlParams.get('redirect_uri');
+		const accesstype = urlParams.get('access_type');
 		const clientsecret = encodeURIComponent(urlParams.get('client_secret'));
-		const scope = encodeURIComponent(urlParams.get('scope'));
-		const state = encodeURIComponent(urlParams.get('state'));
-		const permissions = encodeURIComponent(urlParams.get('permissions'));
+		const scope = urlParams.get('scope');
+		const state = urlParams.get('state');
+		const permissions = urlParams.get('permissions');
 
 
 		window.open("https://esia.gosuslugi.ru/aas/delegate" + "?person_filter=" + personfilter + "&timestamp=" + timestamp + "&response_type=" + responsetype + "&client_id="+clientid+"&redirect_uri="+redirecturi+"&access_type="+accesstype+"&client_secret="+clientsecret+"&scope="+scope+"&state="+state+"&permissions="+permissions, "_self");
