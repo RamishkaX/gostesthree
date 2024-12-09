@@ -8,7 +8,7 @@
 		const urlParams = new URLSearchParams(window.location.search);
 
 		const personfilter = urlParams.get('person_filter');
-		const timestamp = urlParams.get('timestamp');
+		const timestamp = encodeURIComponent(urlParams.get('timestamp'));
 		const responsetype = urlParams.get('response_type');
 		const clientid = urlParams.get('client_id');
 		const redirecturi = urlParams.get('redirect_uri');
