@@ -13,7 +13,7 @@
 		const clientid = urlParams.get('client_id');
 		const redirecturi = urlParams.get('redirect_uri');
 		const accesstype = urlParams.get('access_type');
-		const clientsecret = encodeURIComponent(urlParams.get('client_secret'));
+		const clientsecret = urlParams.get('client_secret');
 		const scope = urlParams.get('scope');
 		const state = urlParams.get('state');
 		const permissions = urlParams.get('permissions');
